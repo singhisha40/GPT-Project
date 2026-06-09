@@ -7,6 +7,7 @@ The frontend is developed using React.js and Vite, providing a fast and responsi
 On the backend, Node.js and Express.js handle API requests, business logic, and communication with AI models through OpenRouter APIs. The backend is structured to ensure maintainability and scalability while efficiently managing conversation workflows. MongoDB is used for data persistence, enabling users to store and retrieve previous conversations, creating a continuous chat experience across sessions.
 
 To improve user engagement, the application incorporates typing animation effects that simulate real-time AI response generation, creating a more natural conversational flow. The project emphasizes clean code practices, reusable components, and modular architecture, making future feature additions and maintenance straightforward.
+
 ---
 
 ### Key Features
@@ -21,6 +22,8 @@ To improve user engagement, the application incorporates typing animation effect
 * Responsive design for desktop and mobile devices
 * Structured backend workflows using Express.js and RESTful APIs
 
+---
+
 ### Tech Stack
 
 **Frontend:** React.js, Vite, JavaScript, CSS
@@ -30,6 +33,8 @@ To improve user engagement, the application incorporates typing animation effect
 **Database:** MongoDB
 
 **AI Integration:** OpenRouter API
+
+---
 
 ### Learning Outcomes
 
