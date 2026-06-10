@@ -4,6 +4,10 @@ BataoGPT is a full-stack AI chatbot application inspired by ChatGPT, designed to
 
 Built with a modern web development stack, the application focuses on **performance**, **scalability**, and an intuitive user experience.
 
+
+🔗 **Live Demo:** [https://gpt-project-green.vercel.app/](https://gpt-project-green.vercel.app/)
+
+
 ## 🚀 Features
 
 ### 💬 Intelligent Conversations
