@@ -1,0 +1,26 @@
+**Backend** is majorly built on these three:
+1.Models : DB me jo kuch bhi store karna hai, jo bhi thought process rahega vo isme store hoga
+
+2.Utils: Utility functions, majorly from getting responses from the api
+
+3. Routes: For all the routes, usage of express router, using REST APIs
+
+To store history, we need threads: 1 individual chat sequence
+Schema:
+    ThreadSchema:
+        ThreadID, 
+        Title
+        Messages : role(user, assistant) : AN individual SCHEMA WILL BE CREATED
+        CreatedAt: 
+        UpdatedAt: to sort threads
+    MessageSchema:
+        Content,
+        Role(user, assistant),
+        Timestamp
+
+
+Routes: chat.js
+GET  /thread return all threads to the frontend, sorted on the basis of UpdatedAt time
+GET /thread/:threadId  ek specific thread ke sare ke sare messages return karega
+DELETE /thread/:threadId delete on the basis of threadId
+POST /chat [message + reply] => add to the database
