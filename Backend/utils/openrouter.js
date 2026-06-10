@@ -60,6 +60,13 @@ const getOpenRouterAPIResponse = async (message) => {
 
   const response = await fetch("https://openrouter.ai/api/v1/chat/completions", options);
   const data = await response.json();
+  
+  console.log("OpenRouter response:", JSON.stringify(data)); 
+
+  if (!data.choices || !data.choices[0]) {
+    throw new Error(data.error?.message || "No response from OpenRouter");
+  }
+
   return data.choices[0].message.content;
 };
 
