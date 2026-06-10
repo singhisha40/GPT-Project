@@ -42,7 +42,7 @@ import chatRoutes from "./routes/chat.js";
 dotenv.config();
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cors());
@@ -52,14 +52,14 @@ app.get("/", (req, res) => {
   res.send("API working");
 });
 
-const connectDB = async()=>{
-  try{
-      await mongoose.connect(process.env.MONGODB_URI);
-      console.log("Successfully connected to DB");
-  }catch(err){
-    console.log("Failed to connect to DB",err);
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log("Successfully connected to DB");
+  } catch (err) {
+    console.log("Failed to connect to DB", err);
   }
-}
+};
 
 // app.post("/test", async (req, res) => {
 //   const options = {
@@ -101,3 +101,8 @@ app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
    connectDB();
 });
+
+
+
+
+
