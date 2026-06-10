@@ -53,7 +53,7 @@ const getOpenRouterAPIResponse = async (message) => {
       "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`
     },
     body: JSON.stringify({
-      model: "deepseek/deepseek-chat:free",
+      model: "meta-llama/llama-3.1-8b-instruct:free",
       messages: [{ role: "user", content: message }]
     })
   };
