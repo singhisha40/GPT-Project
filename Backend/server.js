@@ -1,37 +1,3 @@
-// import OpenAI from 'openai';
-// import 'dotenv/config';
-
-// const client = new OpenAI({
-//   baseURL: "https://openrouter.ai/api/v1",
-//   apiKey: process.env.OPENROUTER_API_KEY,
-// });
-
-// const response = await client.responses.create({
-//   model: "deepseek/deepseek-chat",
-//   input: 'Tell me a joke related to Computer Science',
-// });
-
-// console.log(response.output_text);
-
-// import OpenAI from "openai";
-// import 'dotenv/config';
-
-// const client = new OpenAI({
-//   baseURL: "https://openrouter.ai/api/v1",
-//   apiKey: process.env.OPENROUTER_API_KEY,
-// });
-
-// const response = await client.chat.completions.create({
-//   model: "deepseek/deepseek-chat",
-//   messages: [
-//     {
-//       role: "user",
-//       content: "Hello!"
-//     }
-//   ]
-// });
-
-// console.log(response.choices[0].message.content);
 import fetch from "node-fetch";
 import express from "express";
 import cors from "cors";
