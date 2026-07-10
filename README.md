@@ -7,6 +7,11 @@ Built with a modern web development stack, the application focuses on **performa
 
 🔗 **Live Demo:** [https://gpt-project-green.vercel.app/](https://gpt-project-green.vercel.app/)
 
+![Docker Build](https://github.com/singhisha40/GPT-Project/actions/workflows/docker.yml/badge.svg)
+
+** Run with Docker **
+docker-compose up --build
+
 
 ## 🚀 Features
 
