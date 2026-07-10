@@ -9,8 +9,10 @@ Built with a modern web development stack, the application focuses on **performa
 
 ![Docker Build](https://github.com/singhisha40/GPT-Project/actions/workflows/docker.yml/badge.svg)
 
-** Run with Docker **
+## Run with Docker
+```
 docker-compose up --build
+```
 
 
 ## 🚀 Features
